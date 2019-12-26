@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Almarai&display=swap');
+body{font-family: 'Almarai'}
 .restaurant{
     width: 100%;
     height: 800px;
