@@ -1,32 +1,59 @@
 @import url('https://fonts.googleapis.com/css?family=Almarai&display=swap');
-body{font-family: 'Almarai'}
+body{
+    font-family: 'Almarai';
+    direction: rtl;
+}
 .restaurant{
     width: 100%;
-    height: 800px;
+    padding-bottom: 50px;
     background-image: url('./../images/background.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
 }
-.restaurant .right img{
-    margin-top: 150px;
+.restaurant .left img{
+    margin-top: 50px;
+    margin-left: 68px;
 }
 .restaurant .image img{
-    width: 45%;
-    margin-left: 64%;
+    width: 100%;
+    float: right;
+}
+.restaurant .image h1{
+    font-size: 84px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 52px;
+    margin-left: 134px;
+    color: #f19f2e;
+    -webkit-text-shadow: -1px 2px 12px 0px rgba(0,0,0,0.75);
+    -moz-text-shadow: -1px 2px 12px 0px rgba(0,0,0,0.75);
+    text-shadow: -1px 2px 12px 0px rgba(0,0,0,0.75);
+
 }
 .restaurant .paragraph{
-    margin-top: 90px;
+    margin-top: 20px;
     text-align: initial;
     font-size: 30px;
     color: #737171;
 }
 .restaurant .download{
-    margin-top: 51px;
+    margin-top: 50px;
     margin-right: 18px;
 }
-.restaurant .download img{    width: 40%;}
+.restaurant .download button{
+    font-size: 29px;
+    padding: 5px 101px;
+    background-color: #ec8a3d;
+    border-radius: 64px;
+    color: #fff;
+    margin-left: 17px;
+    background: linear-gradient(16deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+
+
+}
+.restaurant .download img{ width: 40%;}
 .restaurant .download p{
     color: #fff;
     text-align: center;
@@ -37,7 +64,7 @@ body{font-family: 'Almarai'}
     list-style: none;
     display: inline-flex;
     margin-right: 87px;
-    margin-top: 23px;
+    margin-top: 60px;
 }
 .restaurant .social li{
     font-size: 25px;
@@ -47,17 +74,81 @@ body{font-family: 'Almarai'}
 
 
 @media (max-width: 575.98px){
-    .restaurant .right{display: none;}
+    /* .restaurant{height: 740px;} */
+    .restaurant .left{display: none;}
+    .restaurant .image img {width: 31%;}
+    .restaurant .image h1 {
+        font-size: 40px;
+        color: #000;
+        margin-left: 0;
+    }
+    .restaurant .paragraph{font-size: 15px;text-align: center;}
+    .restaurant .download{margin-right: 0px;}
+    .restaurant .download img { 
+        width: 100%;
+        position: relative;
+        left: 16px;
+        margin-bottom: 10px;
+    }
+    .restaurant .social{margin-right: 0;}
+    
 }
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .restaurant{padding-bottom: 0;}
+    .restaurant .left{display: none;}
+    .restaurant .image img {width: 31%;}
+    .restaurant .image h1 {
+        font-size: 70px;
+        color: #000;
+        margin-left: 0;
+    }
+    .restaurant .paragraph{font-size: 30px;text-align: center;}
+    .restaurant .download{margin-right: 0px;}
+    .restaurant .download img { 
+        width: 100%;
+        position: relative;
+        left: 16px;
+        margin-bottom: 10px;
+    }
+    .restaurant .social{margin-right: 0;}
+}
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .restaurant{padding-bottom: 0;}
+    .restaurant .left{display: none;}
+    .restaurant .image img {width: 31%;}
+    .restaurant .image h1 {
+        font-size: 70px;
+        color: #000;
+        margin-left: 0;
+    }
+    .restaurant .paragraph{font-size: 30px;text-align: center;}
+    .restaurant .download{margin-right: 0px;}
+    .restaurant .download img { 
+        width: 100%;
+        position: relative;
+        left: 16px;
+        margin-bottom: 10px;
+    }
+    .restaurant .social{margin-right: 0;}
+}
 
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-   
+    .restaurant .image h1{
+        font-size: 57px;
+        margin-top: 28px;
+        margin-left: 86px;
+    }
+    .restaurant .paragraph{    font-size: 22px;    }
+    .restaurant .left img {
+        margin-top: 194px;
+        margin-left: 0;
+        width: 64%;
+    }
+
 }
