@@ -37,10 +37,14 @@ body{
     text-align: initial;
     font-size: 30px;
     color: #737171;
+    font-weight: bold;
 }
 .restaurant .download{
     margin-top: 50px;
     margin-right: 18px;
+}
+.restaurant .download a{
+    text-decoration: none;
 }
 .restaurant .download button{
     font-size: 29px;
@@ -50,8 +54,6 @@ body{
     color: #fff;
     margin-left: 17px;
     background: linear-gradient(16deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
-
-
 }
 .restaurant .download img{ width: 40%;}
 .restaurant .download p{
@@ -85,7 +87,7 @@ body{
     .restaurant .paragraph{font-size: 15px;text-align: center;}
     .restaurant .download{margin-right: 0px;}
     .restaurant .download img { 
-        width: 100%;
+        /* width: 45%; */
         position: relative;
         left: 16px;
         margin-bottom: 10px;
@@ -107,7 +109,7 @@ body{
     .restaurant .paragraph{font-size: 30px;text-align: center;}
     .restaurant .download{margin-right: 0px;}
     .restaurant .download img { 
-        width: 100%;
+        /* width: 45%; */
         position: relative;
         left: 16px;
         margin-bottom: 10px;
@@ -128,7 +130,7 @@ body{
     .restaurant .paragraph{font-size: 30px;text-align: center;}
     .restaurant .download{margin-right: 0px;}
     .restaurant .download img { 
-        width: 100%;
+        width: 45%;
         position: relative;
         left: 16px;
         margin-bottom: 10px;
